@@ -40,7 +40,7 @@ export const Navbar = () => {
           {/* Logo */}
           <a
             href="#"
-            className="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors"
+            className="text-lg md:text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors"
           >
             <span className="text-primary">&lt;</span>
             DevName
@@ -123,7 +123,7 @@ export const Navbar = () => {
                 </a>
               ))}
             </div>
-            <a href="public/resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full">
               <Button size="sm" className="mt-4 w-full">
                 Download CV
               </Button>
