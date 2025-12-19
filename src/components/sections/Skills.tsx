@@ -8,8 +8,9 @@ const skillCategories = [
       { name: "TypeScript", level: 90 },
       { name: "JavaScript", level: 95 },
       { name: "Python", level: 80 },
-      { name: "Go", level: 60 },
+      { name: "Java", level: 75 },
       { name: "SQL", level: 85 },
+      { name: "C/C++", level: 70 },
     ],
   },
   {
@@ -29,7 +30,7 @@ const skillCategories = [
       { name: "Express", level: 85 },
       { name: "PostgreSQL", level: 80 },
       { name: "MongoDB", level: 75 },
-      { name: "GraphQL", level: 70 },
+     
     ],
   },
   {
@@ -37,8 +38,7 @@ const skillCategories = [
     skills: [
       { name: "Git", level: 90 },
       { name: "Docker", level: 75 },
-      { name: "AWS", level: 70 },
-      { name: "Figma", level: 80 },
+      { name: "AWS", level: 70 },,
       { name: "CI/CD", level: 75 },
     ],
   },

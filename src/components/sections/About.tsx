@@ -1,10 +1,10 @@
 import { Code2, Coffee, Rocket, Users } from "lucide-react";
 
 const stats = [
-  { icon: Code2, value: "5+", label: "Years Experience" },
-  { icon: Rocket, value: "50+", label: "Projects Completed" },
-  { icon: Users, value: "30+", label: "Happy Clients" },
-  { icon: Coffee, value: "∞", label: "Cups of Coffee" },
+  { icon: Code2, value: "3+", label: "Years Experience" },
+  { icon: Rocket, value: "5+", label: "Projects Completed" },
+  { icon: Users, value: "3+", label: "Happy Clients" },
+  
 ];
 
 export const About = () => {
@@ -20,49 +20,19 @@ export const About = () => {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Image/Visual */}
-            <div className="relative">
-              <div className="aspect-square max-w-md mx-auto relative">
-                {/* Decorative border */}
-                <div className="absolute inset-4 border-2 border-primary/30 rounded-2xl" />
-                
-                {/* Main image container */}
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary to-muted rounded-2xl overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-4">
-                        <Code2 className="w-16 h-16 text-primary" />
-                      </div>
-                      <p className="text-muted-foreground text-sm">Your photo here</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating accent */}
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
-              </div>
-            </div>
-
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             {/* Content */}
             <div className="space-y-6">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Hello! I'm John, a passionate full-stack developer based in San Francisco. 
-                I enjoy creating things that live on the internet, whether that be websites, 
-                applications, or anything in between.
+                As a Software Engineer, I specialize in creating scalable web applications, RESTful APIs, and AI-driven solutions. My expertise in Python, SQL, and backend development allows me to automate data workflows, optimize database performance, and build high-performance systems. I have hands-on experience with Generative AI, including OpenAI and Mistral LLMs, which I use to develop intelligent chatbots, semantic search features, and caching solutions.
               </p>
               
               <p className="text-muted-foreground text-lg leading-relaxed">
-                My journey in web development started back in 2018 when I decided to try 
-                customizing a WordPress theme — turns out hacking together custom code taught 
-                me a lot about HTML & CSS! Fast-forward to today, and I've had the privilege 
-                of working at a startup, a huge corporation, and a student-led design studio.
+                My technical background includes advanced data processing and analytics using PySpark, Pandas, and NumPy, along with a solid foundation in machine learning techniques such as supervised and unsupervised learning, deep learning, and recommendation systems. I have designed and deployed CI/CD pipelines using Azure Pipelines and Jenkins, and I am experienced in performance tuning, load testing with JMeter, and securing applications using Nginx as a reverse proxy.
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                My main focus these days is building accessible, inclusive products and 
-                digital experiences. I'm also currently learning about cloud architecture 
-                and system design.
+               In addition, I have experience with web scraping and automation, cloud and DevOps tools, and data visualization. I have hands-on experience building realistic, production-ready websites with a strong focus on usability, performance, and responsive design. I am a collaborative and detail-oriented team player who actively contributes to code reviews, technical documentation, and cross-functional project initiatives, with a strong focus on delivering scalable, secure, and maintainable software solutions.
               </p>
 
               {/* Tech stack highlight */}
@@ -71,7 +41,7 @@ export const About = () => {
                   Technologies I've been working with recently:
                 </p>
                 <div className="grid grid-cols-2 gap-2">
-                  {["React", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker"].map(
+                  {["React", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker", "n8n","Python","OpenAI"].map(
                     (tech) => (
                       <div key={tech} className="flex items-center gap-2 text-muted-foreground">
                         <span className="text-primary">▹</span>

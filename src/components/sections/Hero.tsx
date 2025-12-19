@@ -21,7 +21,7 @@ export const Hero = () => {
         }}
       />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Greeting */}
           <p className="text-primary font-mono text-sm md:text-base mb-4 animate-fade-up">
@@ -29,16 +29,16 @@ export const Hero = () => {
           </p>
 
           {/* Name */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 animate-fade-up-delay-1">
-            John Doe
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground mb-4 animate-fade-up-delay-1">
+            HARISH KUMAR SAMALA
           </h1>
 
           {/* Title with typewriter effect */}
-          <div className="h-12 md:h-16 flex items-center justify-center mb-6 animate-fade-up-delay-2">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-muted-foreground">
-              I build{" "}
+          <div className="h-09 md:h-12 flex items-center justify-center mb-5 animate-fade-up-delay-2">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-muted-foreground">
+              I design and develop{" "}
               <span className="text-gradient typewriter inline-block">
-                amazing web experiences
+                immersive web experiences that feel intuitive, modern, and impactful.
               </span>
             </h2>
           </div>
@@ -46,8 +46,7 @@ export const Hero = () => {
           {/* Description */}
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-up-delay-3">
             I'm a full-stack developer specializing in building exceptional
-            digital experiences. Currently focused on creating accessible,
-            human-centered products.
+            digital experiences.
           </p>
 
           {/* CTA Buttons */}

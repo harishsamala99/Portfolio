@@ -77,9 +77,11 @@ export const Navbar = () => {
               ))}
             </div>
 
-            <Button size="sm" className="glow-subtle">
-              Download CV
-            </Button>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Button size="sm" className="glow-subtle">
+                Download CV
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -121,9 +123,11 @@ export const Navbar = () => {
                 </a>
               ))}
             </div>
-            <Button size="sm" className="mt-4 w-full">
-              Download CV
-            </Button>
+            <a href="public/resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full">
+              <Button size="sm" className="mt-4 w-full">
+                Download CV
+              </Button>
+            </a>
           </div>
         )}
       </nav>
