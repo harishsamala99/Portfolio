@@ -43,7 +43,7 @@ export const Navbar = () => {
             className="text-lg md:text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors"
           >
             <span className="text-primary">&lt;</span>
-            DevName
+            Harish Samala
             <span className="text-primary">/&gt;</span>
           </a>
 

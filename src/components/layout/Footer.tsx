@@ -19,7 +19,7 @@ export const Footer = () => {
             className="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors"
           >
             <span className="text-primary">&lt;</span>
-            DevName
+            Harish Samala
             <span className="text-primary">/&gt;</span>
           </a>
 
@@ -42,7 +42,7 @@ export const Footer = () => {
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
             © {currentYear} Made with{" "}
-            <Heart className="w-4 h-4 text-primary fill-primary" /> by DevName
+            <Heart className="w-4 h-4 text-primary fill-primary" /> by Harish Samala
           </p>
         </div>
       </div>
