@@ -2,6 +2,15 @@ import { useState, useEffect } from "react";
 import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "../ThemeSwitcher";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -74,11 +83,34 @@ export const Navbar = () => {
               ))}
             </div>
             <ModeToggle />
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <Button size="sm" className="glow-subtle">
-                Download CV
-              </Button>
-            </a>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="sm" className="glow-subtle">
+                  <img src="/pdf-logo.svg" alt="PDF" className="w-4 h-4 mr-2 inline-block" />
+                  Download CV
+                </Button>
+              </DialogTrigger>
+
+              <DialogContent className="max-w-4xl w-[90%]">
+                <DialogHeader>
+                  <DialogTitle>Resume — Quick View</DialogTitle>
+                  <DialogDescription>Preview the PDF below. You can download a copy if needed.</DialogDescription>
+                </DialogHeader>
+
+                <div className="w-full h-[70vh] mt-4">
+                  <iframe src="/resume.pdf" className="w-full h-full" title="Resume preview" />
+                </div>
+
+                <DialogFooter>
+                  <a href="/resume.pdf" download="Harish-Samala-Resume.pdf" rel="noopener noreferrer">
+                    <Button size="sm" className="mt-2">
+                      <img src="/pdf-logo.svg" alt="PDF" className="w-4 h-4 mr-2 inline-block" />
+                      Download
+                    </Button>
+                  </a>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -121,11 +153,33 @@ export const Navbar = () => {
               ))}
             </div>
             <ModeToggle />
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full">
-              <Button size="sm" className="mt-4 w-full">
-                Download CV
-              </Button>
-            </a>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="sm" className="mt-4 w-full">
+                  <img src="/pdf-logo.svg" alt="PDF" className="w-4 h-4 mr-2 inline-block" />
+                  Download CV
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl w-[95%]">
+                <DialogHeader>
+                  <DialogTitle>Resume — Quick View</DialogTitle>
+                  <DialogDescription>Preview the PDF below. You can download a copy if needed.</DialogDescription>
+                </DialogHeader>
+
+                <div className="w-full h-[70vh] mt-4">
+                  <iframe src="/resume.pdf" className="w-full h-full" title="Resume preview" />
+                </div>
+
+                <DialogFooter>
+                  <a href="/resume.pdf" download="Harish-Samala-Resume.pdf" rel="noopener noreferrer">
+                    <Button size="sm" className="mt-2">
+                      <img src="/pdf-logo.svg" alt="PDF" className="w-4 h-4 mr-2 inline-block" />
+                      Download
+                    </Button>
+                  </a>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
           </div>
         )}
       </nav>
