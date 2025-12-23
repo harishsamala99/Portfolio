@@ -16,11 +16,13 @@ export const Education = () => {
             <div className="gradient-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors group">
               <h3 className="text-xl font-bold">NEW JERSEY INSTITUTE OF TECHNOLOGY</h3>
               <p className="text-muted-foreground">Master of Science in Computer Science</p>
+              <p className="text-muted-foreground">Newark, NJ</p>
               <p className="text-sm text-muted-foreground">2022 - 2024</p>
             </div>
             <div className="gradient-card p-6 rounded-lg border border-border hover:border-primary/50 transition-colors group">
               <h3 className="text-xl font-bold">SIDDHARTHA INSTITUTE OF TECHNOLOGY and SCIENCE</h3>
-              <p className="text-muted-foreground">Bachelor of Technology in Electrical and Electronics Engineering</p>
+              <p className="text-muted-foreground">Bachelor of Technology in Computer Science and Engineering</p>
+              <p className="text-muted-foreground">Hyderabad, India</p>
               <p className="text-sm text-muted-foreground">2017 - 2021</p>
             </div>
           </div>
