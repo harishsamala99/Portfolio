@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-hero">
+    <section className="min-h-screen flex items-center justify-center relative overflow-x-hidden gradient-hero">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -11,61 +11,81 @@ export const Hero = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
       </div>
 
-      {/* Grid pattern overlay */}
+      {/* Grid overlay */}
       <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), 
+          backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
                            linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
           backgroundSize: "50px 50px",
         }}
       />
 
-      <div className="container mx-auto px-8 relative z-10">
+      <div className="container mx-auto px-6 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Greeting */}
           <p className="text-primary font-mono text-sm md:text-base mb-4 animate-fade-up">
             Hi, my name is
           </p>
 
-          {/* Name */}
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground mb-4 animate-fade-up-delay-1">
+          {/* Name (fluid, desktop preserved) */}
+          <h1
+            className="font-bold text-foreground mb-4 break-words animate-fade-up-delay-1"
+            style={{
+              fontSize: "clamp(1.8rem, 5vw, 3rem)",
+              lineHeight: "1.15",
+            }}
+          >
             HARISH KUMAR SAMALA
           </h1>
 
-          {/* Title with typewriter effect */}
-          <div className="h-09 md:h-12 flex items-center justify-center mb-5 animate-fade-up-delay-2">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-muted-foreground">
+          {/* Headline */}
+          <div className="flex justify-center mb-6 px-2 animate-fade-up-delay-2">
+            <h2
+              className="font-bold text-muted-foreground text-center"
+              style={{
+                fontSize: "clamp(1.15rem, 4.2vw, 2.25rem)",
+                lineHeight: "1.3",
+              }}
+            >
               I design and develop{" "}
-              <span className="text-gradient typewriter inline-block">
+              <span className="text-gradient typewriter inline md:inline-block">
                 immersive web experiences that feel intuitive, modern, and impactful.
               </span>
             </h2>
           </div>
 
           {/* Description */}
-          <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-up-delay-3">
+          <p
+            className="text-muted-foreground max-w-2xl mx-auto mb-8 px-2 animate-fade-up-delay-3"
+            style={{
+              fontSize: "clamp(1rem, 3.2vw, 1.25rem)",
+              lineHeight: "1.6",
+            }}
+          >
             I'm a full-stack developer specializing in building exceptional
             digital experiences.
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
             <Button size="lg" className="glow-primary group">
               View My Work
               <ArrowDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
             </Button>
+
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com"
+                href="https://github.com/harishsamala99"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all"
               >
                 <Github className="w-5 h-5" />
               </a>
+
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/samala-harish-kumar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all"
@@ -78,7 +98,7 @@ export const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 rounded-full border-2 border-muted-foreground flex items-start justify-center p-2">
           <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
         </div>

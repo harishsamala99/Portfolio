@@ -5,14 +5,14 @@ import { cn } from "@/lib/utils";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "SUPERIOR LIMOUSINE LLC CT",
     description:
       "A full-stack e-commerce solution with payment processing, inventory management, and real-time order tracking.",
     image: "/placeholder.svg",
     tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
     category: "Full Stack",
-    github: "https://github.com",
-    live: "https://example.com",
+    github: "https://github.com/harishsamala99/Superior_Limousine_LLC.git",
+    live: "https://superiorlimousinellcct.com",
     featured: true,
   },
   {

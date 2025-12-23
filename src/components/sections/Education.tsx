@@ -6,7 +6,7 @@ export const Education = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <p className="text-primary font-mono text-sm mb-2">My academic background</p>
+            <p className="text-primary font-mono text-sm mb-2">MY ACADEMIC BACKGROUND</p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Edu<span className="text-gradient">cation</span>
             </h2>

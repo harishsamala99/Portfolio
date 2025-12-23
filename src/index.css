@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* Fonts loaded in index.html via <link> to avoid postcss @import ordering issues */
+
+
 
 @layer base {
   :root {
@@ -149,4 +151,14 @@
   border-right: 2px solid hsl(var(--primary));
   white-space: nowrap;
   animation: typewriter 2s steps(30) forwards, blink 0.7s step-end infinite;
+}
+
+/* Mobile: allow wrapping and show full text (disable typewriter animation) */
+@media (max-width: 640px) {
+  .typewriter {
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    animation: none;
+  }
 }

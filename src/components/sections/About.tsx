@@ -1,9 +1,8 @@
 import { Code2, Coffee, Rocket, Users } from "lucide-react";
 
 const stats = [
-  { icon: Code2, value: "3+", label: "Years Experience" },
+  { icon: Code2, value: "2+", label: "Years Experience" },
   { icon: Rocket, value: "5+", label: "Projects Completed" },
-  { icon: Users, value: "3+", label: "Happy Clients" },
   
 ];
 
@@ -24,15 +23,17 @@ export const About = () => {
             {/* Content */}
             <div className="space-y-6">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                As a Software Engineer, I specialize in creating scalable web applications, RESTful APIs, and AI-driven solutions. My expertise in Python, SQL, and backend development allows me to automate data workflows, optimize database performance, and build high-performance systems. I have hands-on experience with Generative AI, including OpenAI and Mistral LLMs, which I use to develop intelligent chatbots, semantic search features, and caching solutions.
+                I’m a Software Engineer specializing in building scalable web applications, RESTful APIs, and AI-driven solutions. I work primarily with Python and backend systems to automate data workflows, optimize database performance, and deliver high-performance, production-ready software.
+
               </p>
               
               <p className="text-muted-foreground text-lg leading-relaxed">
-                My technical background includes advanced data processing and analytics using PySpark, Pandas, and NumPy, along with a solid foundation in machine learning techniques such as supervised and unsupervised learning, deep learning, and recommendation systems. I have designed and deployed CI/CD pipelines using Azure Pipelines and Jenkins, and I am experienced in performance tuning, load testing with JMeter, and securing applications using Nginx as a reverse proxy.
+               I have hands-on experience with Generative AI, including OpenAI and Mistral LLMs, and have built intelligent chatbots, semantic search features, and optimized caching solutions. My background also includes data processing and analytics using tools like PySpark, Pandas, and NumPy, along with practical experience in machine learning and recommendation systems.
+
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-               In addition, I have experience with web scraping and automation, cloud and DevOps tools, and data visualization. I have hands-on experience building realistic, production-ready websites with a strong focus on usability, performance, and responsive design. I am a collaborative and detail-oriented team player who actively contributes to code reviews, technical documentation, and cross-functional project initiatives, with a strong focus on delivering scalable, secure, and maintainable software solutions.
+               I’ve designed and deployed CI/CD pipelines, worked with cloud and DevOps tools, and focused on performance tuning, security, and scalability. Beyond backend systems, I enjoy building modern, responsive web interfaces with a strong emphasis on usability and performance. I’m a collaborative, detail-oriented developer who values clean code, documentation, and maintainable solutions.
               </p>
 
               {/* Tech stack highlight */}
