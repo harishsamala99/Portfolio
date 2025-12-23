@@ -11,7 +11,7 @@ const projects = [
     image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513660/Screenshot_14_z0ldcv.png",
     tags: ["React", "Node.js",],
     category: "Frontend",
-    github: "https://github.com/harishsamala99/Superior_Limousine_LLC.git",
+    github: "https://github.com/moghalakrambaig/superiorlimousinellc.git",
     live: "https://superiorlimousinellcct.com",
     featured: true,
   },
