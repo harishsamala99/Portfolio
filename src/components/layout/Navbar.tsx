@@ -12,7 +12,7 @@ const navLinks = [
 const socialLinks = [
   { icon: Github, href: "https://github.com/harishsamala99", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/samala-harish-kumar/", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:samalaharishkumar@gmail.com", label: "Email" },
+  { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=samalaharishkumar@gmail.com", label: "Gmail" },
 ];
 
 export const Navbar = () => {

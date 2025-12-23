@@ -1,4 +1,4 @@
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
@@ -39,16 +39,27 @@ export const Contact = () => {
               <span>samalaharishkumar@gmail.com</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
+              <Phone className="w-5 h-5 text-primary" />
+              <a href="tel:+11234567890" className="underline">+1 (475) 208-0329</a>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin className="w-5 h-5 text-primary" />
               <span>Norwalk, CT</span>
             </div>
           </div>
 
           {/* CTA Button */}
-          <Button size="lg" className="glow-primary group">
-            <Mail className="mr-2 w-5 h-5" />
-            Say Hello
-            <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          <Button asChild size="lg" className="glow-primary group">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=samalaharishkumar@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <Mail className="mr-2 w-5 h-5" />
+              Say Hello
+              <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </a>
           </Button>
 
           {/* Decorative elements */}

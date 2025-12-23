@@ -14,6 +14,32 @@ const skillCategories = [
     ],
   },
   {
+    name: "AI & ML",
+    skills: [
+      { name: "Machine Learning", level: 80 },
+      { name: "Deep Learning", level: 85 },
+      { name: "Natural Language Processing", level: 75 },
+      { name: "TensorFlow", level: 70 },
+      { name: "PyTorch", level: 75 },
+      { name: "Scikit-learn", level: 80 },
+       { name: "OPENAI API's", level: 85 },
+        { name: "Mistral LLM's", level: 80 },
+         { name: "Generative AI", level: 85 },
+    ],   
+  },
+  {
+    name: "Data Engineering & Analytics",
+    skills: [
+      { name: "Pandas", level: 75 },
+      { name: "NumPy", level: 70 },
+      { name: "Matplotlib", level: 75 },
+      { name: "Seaborn", level: 70 },
+      { name: "Scikit-learn", level: 80 },
+      { name: "TensorFlow", level: 70 },
+    ]
+  },
+  
+  {
     name: "Frontend",
     skills: [
       { name: "React", level: 95 },
@@ -24,15 +50,19 @@ const skillCategories = [
     ],
   },
   {
-    name: "Backend",
+    name: "Backend & API's",
     skills: [
-      { name: "Node.js", level: 90 },
+      { name: "Node.js", level: 70 },
       { name: "Express", level: 85 },
+      { name: "Spring Data JPA (Hibernate)", level: 70 },
+      { name: "Flask", level: 80 },
       { name: "PostgreSQL", level: 80 },
       { name: "MongoDB", level: 75 },
      
     ],
-  },
+  }
+  
+  ,
   {
     name: "Tools",
     skills: [
@@ -40,6 +70,9 @@ const skillCategories = [
       { name: "Docker", level: 75 },
       { name: "AWS", level: 70 },
       { name: "CI/CD", level: 75 },
+      { name: " Vercel", level: 90 },
+      { name: "Railway", level: 70 },
+
     ],
   },
 ];

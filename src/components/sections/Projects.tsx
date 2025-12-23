@@ -7,9 +7,9 @@ const projects = [
     id: 1,
     title: "SUPERIOR LIMOUSINE LLC CT",
     description:
-      "A full-stack e-commerce solution with payment processing, inventory management, and real-time order tracking.",
-    image: "/placeholder.svg",
-    tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
+      ".",
+    image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513660/Screenshot_14_z0ldcv.png",
+    tags: ["React", "Node.js"],
     category: "Full Stack",
     github: "https://github.com/harishsamala99/Superior_Limousine_LLC.git",
     live: "https://superiorlimousinellcct.com",
@@ -29,14 +29,14 @@ const projects = [
   },
   {
     id: 3,
-    title: "Task Management App",
+    title: "SPARKLE CLEANING SERVICES",
     description:
       "A collaborative task management tool with real-time updates, team workspaces, and analytics dashboard.",
-    image: "/placeholder.svg",
+    image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513659/Screenshot_17_mlcakl.png",
     tags: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
     category: "Full Stack",
-    github: "https://github.com",
-    live: "https://example.com",
+    github: "https://github.com/harishsamala99/Sparkle-Clean.git",
+    live: "",
     featured: true,
   },
   {
@@ -47,30 +47,20 @@ const projects = [
     image: "/placeholder.svg",
     tags: ["React", "Tailwind", "Framer Motion"],
     category: "Frontend",
-    github: "https://github.com",
-    featured: false,
+    github: "https://github.com/harishsamala99/Portfolio.git",
+    live: "https://portfolio-harish-kumar-samala.vercel.app/",
+    featured: true,
   },
   {
     id: 5,
-    title: "Weather Dashboard",
+    title: "MOBIL Gas Station",
     description:
       "Real-time weather tracking with location-based forecasts and interactive maps.",
-    image: "/placeholder.svg",
+    image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513660/Screenshot_16_e3pzvm.png",
     tags: ["Vue.js", "D3.js", "OpenWeather API"],
     category: "Frontend",
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "API Gateway",
-    description:
-      "A microservices API gateway with rate limiting, authentication, and request logging.",
-    image: "/placeholder.svg",
-    tags: ["Go", "Docker", "Kubernetes", "gRPC"],
-    category: "Backend",
-    github: "https://github.com",
+    github: "https://github.com/harishsamala99/Mobil.git",
+    live: "https://gas-station-nu.vercel.app/",
     featured: false,
   },
 ];
@@ -189,7 +179,7 @@ export const Projects = () => {
           {/* View More */}
           <div className="text-center mt-12">
             <a
-              href="https://github.com"
+              href="https://github.com/harishsamala99?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
