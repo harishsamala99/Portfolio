@@ -36,7 +36,7 @@ export const Hero = () => {
               lineHeight: "1.15",
             }}
           >
-            HARISH KUMAR SAMALA
+            Harish Kumar Samala
           </h1>
 
           {/* Headline */}

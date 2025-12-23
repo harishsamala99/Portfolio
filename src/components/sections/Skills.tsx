@@ -5,8 +5,8 @@ const skillCategories = [
   {
     name: "Languages",
     skills: [
-      { name: "TypeScript", level: 90 },
-      { name: "JavaScript", level: 95 },
+      { name: "TypeScript", level: 75 },
+      { name: "JavaScript", level: 70 },
       { name: "Python", level: 80 },
       { name: "Java", level: 75 },
       { name: "SQL", level: 85 },
@@ -17,11 +17,11 @@ const skillCategories = [
     name: "AI & ML",
     skills: [
       { name: "Machine Learning", level: 80 },
-      { name: "Deep Learning", level: 85 },
+      { name: "Deep Learning", level: 80 },
       { name: "Natural Language Processing", level: 75 },
       { name: "TensorFlow", level: 70 },
       { name: "PyTorch", level: 75 },
-      { name: "Scikit-learn", level: 80 },
+      { name: "Scikit-learn", level: 75 },
        { name: "OPENAI API's", level: 85 },
         { name: "Mistral LLM's", level: 80 },
          { name: "Generative AI", level: 85 },
@@ -34,7 +34,7 @@ const skillCategories = [
       { name: "NumPy", level: 70 },
       { name: "Matplotlib", level: 75 },
       { name: "Seaborn", level: 70 },
-      { name: "Scikit-learn", level: 80 },
+      { name: "Scikit-learn", level: 75 },
       { name: "TensorFlow", level: 70 },
     ]
   },
@@ -42,9 +42,12 @@ const skillCategories = [
   {
     name: "Frontend",
     skills: [
-      { name: "React", level: 95 },
-      { name: "Next.js", level: 85 },
-      { name: "Tailwind CSS", level: 90 },
+      { name: "React", level: 80 },
+      { name: "Next.js", level: 80 },
+      { name: "Tailwind CSS", level: 75 },
+      { name: "HTML", level: 75 },
+      { name: "CSS", level: 75 },
+      { name: "JavaScript", level: 70 },
       { name: "Vue.js", level: 70 },
       { name: "Framer Motion", level: 75 },
     ],

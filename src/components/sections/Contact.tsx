@@ -40,7 +40,7 @@ export const Contact = () => {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Phone className="w-5 h-5 text-primary" />
-              <a href="tel:+11234567890" className="underline">+1 (475) 208-0329</a>
+              <a href="tel:+14752080329" className="underline">+1 (475) 208-0329</a>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin className="w-5 h-5 text-primary" />

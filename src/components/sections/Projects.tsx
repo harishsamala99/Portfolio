@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const projects = [
@@ -9,8 +9,8 @@ const projects = [
     description:
       ".",
     image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513660/Screenshot_14_z0ldcv.png",
-    tags: ["React", "Node.js"],
-    category: "Full Stack",
+    tags: ["React", "Node.js",],
+    category: "Frontend",
     github: "https://github.com/harishsamala99/Superior_Limousine_LLC.git",
     live: "https://superiorlimousinellcct.com",
     featured: true,
@@ -43,8 +43,8 @@ const projects = [
     id: 4,
     title: "Portfolio Template",
     description:
-      "A modern, responsive portfolio template with dark mode and smooth animations.",
-    image: "/placeholder.svg",
+      "A modern, responsive portfolio template with light and dark mode with smooth animations.",
+    image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766530904/Screenshot_19_moiwld.png",
     tags: ["React", "Tailwind", "Framer Motion"],
     category: "Frontend",
     github: "https://github.com/harishsamala99/Portfolio.git",
@@ -55,13 +55,26 @@ const projects = [
     id: 5,
     title: "MOBIL Gas Station",
     description:
-      "Real-time weather tracking with location-based forecasts and interactive maps.",
+      "Built a responsive and visually engaging website for a Mobil Gas Station, highlighting fuel services, location information, and customer convenience with an intuitive design.",
     image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513660/Screenshot_16_e3pzvm.png",
-    tags: ["Vue.js", "D3.js", "OpenWeather API"],
+    tags: ["React", "Node.js"],
     category: "Frontend",
     github: "https://github.com/harishsamala99/Mobil.git",
     live: "https://gas-station-nu.vercel.app/",
     featured: false,
+  },
+
+  {
+    id: 6,
+    title: "Beverage King Customer Rewards",
+    description:
+      "A loyalty program for beverage customers with points tracking and exclusive offers.",
+    image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766530493/Screenshot_18_ccd9dk.png",
+    tags: ["React", "Node.js", "MongoDB"],
+    category: "Full Stack",
+    github: "https://github.com/moghalakrambaig/beverage_king_frontend.git",
+    live: "https://beverageking.vercel.app/",
+    featured: true,
   },
 ];
 
@@ -69,6 +82,7 @@ const categories = ["All", "Full Stack", "Frontend", "Backend", "AI/ML"];
 
 export const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   const filteredProjects =
     activeFilter === "All"
@@ -112,17 +126,21 @@ export const Projects = () => {
                 key={project.id}
                 className="group gradient-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:-translate-y-1"
               >
-                {/* Project Image */}
-                <div className="aspect-video bg-secondary relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
-                  
-                  {/* Overlay icons */}
-                  <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                {/* Project Image - 16:9 frame with gentle hover zoom */}
+                <div className="aspect-video bg-secondary relative overflow-hidden flex items-center justify-center p-4">
+                  <div className="w-full h-full rounded-lg overflow-hidden shadow-lg ring-1 ring-border transition-transform duration-500 bg-black/5 transform will-change-transform group-hover:scale-105 group-hover:shadow-2xl">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover object-center transition-transform duration-500 will-change-transform"
+                    />
+                  </div>
+
+                  {/* subtle gradient for legibility */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/20 to-transparent pointer-events-none" />
+
+                  {/* Overlay icons (moved slightly inwards) */}
+                  <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity z-10">
                     {project.github && (
                       <a
                         href={project.github}
@@ -145,21 +163,53 @@ export const Projects = () => {
                     )}
                   </div>
 
-                  {/* Folder icon */}
-                  <div className="absolute bottom-4 left-4">
-                    <Folder className="w-10 h-10 text-primary" />
-                  </div>
+                  {/* Image click: go to live site if available, otherwise open lightbox */}
+                  {project.live ? (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute inset-0 z-0"
+                      aria-label={`Open ${project.title} live site`}
+                    />
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => setLightboxImage(project.image)}
+                      className="absolute inset-0 bg-transparent cursor-pointer z-0"
+                      aria-label={`Open ${project.title} screenshot`}
+                    />
+                  )}
                 </div>
 
                 {/* Project Content */}
                 <div className="p-5">
-                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-                    {project.description}
-                  </p>
-                  
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                      aria-label={`Open ${project.title} on GitHub`}
+                    >
+                      <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                        {project.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                        {project.description}
+                      </p>
+                    </a>
+                  ) : (
+                    <>
+                      <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                        {project.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                        {project.description}
+                      </p>
+                    </>
+                  )}
+
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
@@ -190,6 +240,32 @@ export const Projects = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox modal */}
+      {lightboxImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setLightboxImage(null)}
+        >
+          <div className="max-w-[90vw] max-h-[90vh]">
+            <img
+              src={lightboxImage}
+              alt="Project screenshot"
+              className="w-full h-full object-contain rounded-md shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+          <button
+            className="absolute top-6 right-6 text-white bg-black/40 rounded-full p-2"
+            onClick={() => setLightboxImage(null)}
+            aria-label="Close"
+          >
+            ✕
+          </button>
+        </div>
+      )}
     </section>
   );
 };
