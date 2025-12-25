@@ -63,8 +63,7 @@ export const Hero = () => {
               lineHeight: "1.6",
             }}
           >
-            I'm a full-stack developer specializing in building exceptional
-            digital experiences.
+            I’m a Software Engineer specializing in building exceptional digital experiences.
           </p>
 
           {/* CTA */}

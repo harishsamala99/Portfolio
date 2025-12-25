@@ -108,18 +108,4 @@ src/
 
 ---
 
-## 🤝 Contributing
 
-Contributions are welcome. Open an issue for suggestions or submit a pull request with a clear description of the change.
-
----
-
-## 📜 License
-
-This project is provided under the **MIT License** — feel free to adapt and use as a personal portfolio template.
-
----
-
-## 👨‍💻 Contact
-
-If you'd like to collaborate or need help, open an issue or contact me via the contact section of the site.

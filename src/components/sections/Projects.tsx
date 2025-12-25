@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "SUPERIOR LIMOUSINE LLC CT",
     description:
-      ".",
+      "A sleek, modern website for a limousine service, featuring service details, fleet information.",
     image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513660/Screenshot_14_z0ldcv.png",
     tags: ["React", "Node.js",],
     category: "Frontend",
@@ -31,12 +31,12 @@ const projects = [
     id: 3,
     title: "SPARKLE CLEANING SERVICES",
     description:
-      "A collaborative task management tool with real-time updates, team workspaces, and analytics dashboard.",
+      "A sleek, modern website for a cleaning service, featuring service details, pricing information. and booking functionality.",
     image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513659/Screenshot_17_mlcakl.png",
     tags: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
     category: "Full Stack",
     github: "https://github.com/harishsamala99/Sparkle-Clean.git",
-    live: "",
+    live: "https://sparklecleaning.vercel.app/",
     featured: true,
   },
   {
@@ -47,15 +47,15 @@ const projects = [
     image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766530904/Screenshot_19_moiwld.png",
     tags: ["React", "Tailwind", "Framer Motion"],
     category: "Frontend",
-    github: "https://github.com/harishsamala99/Portfolio.git",
-    live: "https://portfolio-harish-kumar-samala.vercel.app/",
+    github: "https://github.com/harishsamala99/Portfolio_template.git",
+    live: "https://portfolio-template-one-bay.vercel.app/",
     featured: true,
   },
   {
     id: 5,
     title: "MOBIL Gas Station",
     description:
-      "Built a responsive and visually engaging website for a Mobil Gas Station, highlighting fuel services, location information, and customer convenience with an intuitive design.",
+      "A gas station website with fuel prices, services offered, and location details.",
     image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766513660/Screenshot_16_e3pzvm.png",
     tags: ["React", "Node.js"],
     category: "Frontend",
@@ -68,7 +68,7 @@ const projects = [
     id: 6,
     title: "Beverage King Customer Rewards",
     description:
-      "A loyalty program for beverage customers with points tracking and exclusive offers.",
+      "A full-stack web application for managing customer rewards at a beverage store.",
     image: "https://res.cloudinary.com/disrdtslz/image/upload/v1766530493/Screenshot_18_ccd9dk.png",
     tags: ["React", "Node.js", "MongoDB"],
     category: "Full Stack",
