@@ -1,5 +1,4 @@
-import { ArrowDown, Github, Linkedin } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Github, Linkedin } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -68,11 +67,6 @@ export const Hero = () => {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
-            <Button size="lg" className="glow-primary group">
-              View My Work
-              <ArrowDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
-            </Button>
-
             <div className="flex items-center gap-3">
               <a
                 href="https://github.com/harishsamala99"
