@@ -15,6 +15,7 @@ export function ModeToggle() {
     <Button
       variant="outline"
       size="icon"
+      className="relative ml-2"
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label="Toggle theme"
     >

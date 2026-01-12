@@ -11,14 +11,7 @@ export const Hero = () => {
       </div>
 
       {/* Grid overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.02]"
-        style={{
-          backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
-                           linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-          backgroundSize: "50px 50px",
-        }}
-      />
+      <div className="absolute inset-0 opacity-[0.02] hero-grid-overlay" />
 
       <div className="container mx-auto px-6 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -28,25 +21,13 @@ export const Hero = () => {
           </p>
 
           {/* Name (fluid, desktop preserved) */}
-          <h1
-            className="font-bold text-foreground mb-4 break-words animate-fade-up-delay-1"
-            style={{
-              fontSize: "clamp(1.8rem, 5vw, 3rem)",
-              lineHeight: "1.15",
-            }}
-          >
+          <h1 className="font-bold text-foreground mb-4 break-words animate-fade-up-delay-1 text-[clamp(1.8rem,5vw,3rem)] leading-[1.15]">
             Harish Kumar Samala
           </h1>
 
           {/* Headline */}
           <div className="flex justify-center mb-6 px-2 animate-fade-up-delay-2">
-            <h2
-              className="font-bold text-muted-foreground text-center"
-              style={{
-                fontSize: "clamp(1.15rem, 4.2vw, 2.25rem)",
-                lineHeight: "1.3",
-              }}
-            >
+            <h2 className="font-bold text-muted-foreground text-center text-[clamp(1.15rem,4.2vw,2.25rem)] leading-[1.3]">
               I design and develop{" "}
               <span className="text-gradient typewriter inline md:inline-block">
                 immersive web experiences that feel intuitive, modern, and impactful.
@@ -55,13 +36,7 @@ export const Hero = () => {
           </div>
 
           {/* Description */}
-          <p
-            className="text-muted-foreground max-w-2xl mx-auto mb-8 px-2 animate-fade-up-delay-3"
-            style={{
-              fontSize: "clamp(1rem, 3.2vw, 1.25rem)",
-              lineHeight: "1.6",
-            }}
-          >
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-8 px-2 animate-fade-up-delay-3 text-[clamp(1rem,3.2vw,1.25rem)] leading-[1.6]">
             I’m a Software Engineer specializing in building exceptional digital experiences.
           </p>
 
@@ -72,6 +47,8 @@ export const Hero = () => {
                 href="https://github.com/harishsamala99"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub profile"
+                title="GitHub"
                 className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all"
               >
                 <Github className="w-5 h-5" />
@@ -81,6 +58,8 @@ export const Hero = () => {
                 href="https://linkedin.com/in/samala-harish-kumar"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+                title="LinkedIn"
                 className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all"
               >
                 <Linkedin className="w-5 h-5" />

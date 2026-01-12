@@ -146,13 +146,17 @@ export const Navbar = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`${link.label} profile`}
+                  title={link.label}
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <link.icon className="w-5 h-5" />
                 </a>
               ))}
             </div>
-            <ModeToggle />
+            <div className="mt-4">
+              <ModeToggle />
+            </div>
             <Dialog>
               <DialogTrigger asChild>
                 <Button size="sm" className="mt-4 w-full">
