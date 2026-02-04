@@ -98,11 +98,11 @@ export const Navbar = () => {
                 </DialogHeader>
 
                 <div className="w-full h-[70vh] mt-4">
-                  <iframe src="/resume.pdf" className="w-full h-full" title="Resume preview" />
+                  <iframe src="/Harish Samala.pdf" className="w-full h-full" title="Resume preview" />
                 </div>
 
                 <DialogFooter>
-                  <a href="/resume.pdf" download="Harish-Samala-Resume.pdf" rel="noopener noreferrer">
+                  <a href="/Harish Samala.pdf" download="Harish-Samala-Resume.pdf" rel="noopener noreferrer">
                     <Button size="sm" className="mt-2">
                       <img src="/pdf-logo.svg" alt="PDF" className="w-4 h-4 mr-2 inline-block" />
                       Download
@@ -171,11 +171,11 @@ export const Navbar = () => {
                 </DialogHeader>
 
                 <div className="w-full h-[70vh] mt-4">
-                  <iframe src="/resume.pdf" className="w-full h-full" title="Resume preview" />
+                  <iframe src="/Harish Samala.pdf" className="w-full h-full" title="Resume preview" />
                 </div>
 
                 <DialogFooter>
-                  <a href="/resume.pdf" download="Harish-Samala-Resume.pdf" rel="noopener noreferrer">
+                  <a href="/Harish Samala.pdf" download="Harish-Samala-Resume.pdf" rel="noopener noreferrer">
                     <Button size="sm" className="mt-2">
                       <img src="/pdf-logo.svg" alt="PDF" className="w-4 h-4 mr-2 inline-block" />
                       Download
